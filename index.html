@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chat Proweb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="Code.js"></script>
+    <meta name="description" content="Send a nessage">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Chat, Messages">
+    <meta name="author" content="Daniela Cortes Antonio">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+  </head>
+
+  <body>
+    <main>
+      <h2 class="title" id="s1"><center>Acá puedes enviar mensajes </center></h2>
+       <div class="card" style="text-align: center">
+        <form id="formMessages" action="/my-handling-form-page" method="post">
+          <ul>
+             <label  for="name">Nombre del Remitente:</label>
+             <input type="text" id="user_name" name="user_name">
+            <br>
+             <label for="msj">Mensaje:</label>
+             <textarea id="msj" name="msj"></textarea>
+          
+          </ul>
+          <div style="margin: 5px 0;">
+            <a  href="#s2" >
+              <i class="fa fa-comments">  <label class="messages">Ver todos  los Mensajes</label> </i>
+            
+          </a> 
+           <input class="button" type="button" onclick="sendMessage()" value="Enviar un Mensaje" />
+        
+         </form>
+       
+        </div>
+       
+      
+      </div>
+      <div style="text-align: center">
+        <h2 id="s2"><center>Todos los mensajes</center></h2>
+          <div style="margin: 5px 0;">
+           <a href="#s1">
+             <i class="fa fa-comment">  <label class="messages">Enviar un Mensaje</label> </i>
+           </a> 
+      </div>
+      
+
+    </main>
+
+    
+    <footer>
+      <p>©Copyright </p>
+    </footer>
+
+  </body>
+</html>
